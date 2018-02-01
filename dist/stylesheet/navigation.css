@@ -1,0 +1,156 @@
+.responsive-nav-1 {
+/*margin-left: 300px; margin-top: 20px;
+*/
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.menu-button {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menu.vertical-medium-small-only {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.menu.vertical {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.menu.vertical.align-center {
+    align-items:center;
+}
+.menu.vertical.align-right {
+    align-items:flex-end;
+}
+
+.menu, .menu.horizontal {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.menu input, .menu select, .menu a, .menu button {
+    margin-bottom: 0;
+}
+
+.menu a, .menu .button {
+    line-height: 1;
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem 1rem;
+}
+.is-active a {
+    background-color:#1779ba;
+    color:white;
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.breadcrumbs {
+    margin: 0 0 1rem 0;
+    list-style: none;
+}
+.breadcrumbs::before, .breadcrumbs::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.breadcrumbs::after {
+    clear: both;
+}
+
+.breadcrumbs li {
+    float: left;
+    font-size: 0.6875rem;
+    color: #0a0a0a;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    position: relative;
+    margin: 0 0.75rem;
+    opacity: 1;
+    content: "/";
+    color: #cacaca;
+}
+.breadcrumbs a {
+    color: #1779ba;
+    display: inline;
+}
+
+
+.show-for-sr, .show-on-focus {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+}
+
+@media screen and (min-width: 1024px) {
+.menu.vertical-medium-small-only {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+}
